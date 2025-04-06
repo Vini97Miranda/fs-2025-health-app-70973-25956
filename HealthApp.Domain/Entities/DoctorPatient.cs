@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HealthApp.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 
-namespace HealthApp.Domain.Entities
+namespace HealthApp.Razor.Data
 {
-    internal class DoctorPatient
+    public class DoctorPatient
     {
+        public int DoctorId { get; set; }
+        public Doctor? Doctor { get; set; }
+        public int PatientId { get; set; }
+        public Patient? Patient { get; set; }
     }
 }

@@ -1,28 +1,33 @@
-using System.Diagnostics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using HealthApp.Razor.Data;
+using Microsoft.AspNetCore.Authorization;
+using HealthApp.Domain.Services;
 
-namespace HealthApp.Pages
+namespace HealthApp.Razor.Pages
 {
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    [IgnoreAntiforgeryToken]
-    public class ErrorModel : PageModel
+    [Authorize(Roles = "Admin")]
+    public class DoctorPatientListModel : PageModel
     {
-        public string? RequestId { get; set; }
+        private readonly ApplicationDbContext _context;
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-
-        private readonly ILogger<ErrorModel> _logger;
-
-        public ErrorModel(ILogger<ErrorModel> logger)
+        public DoctorPatientListModel(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public void OnGet()
+        public IList<DoctorPatient> DoctorPatients { get; set; } = default!;
+
+        public async Task OnGetAsync()
         {
-            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            DoctorPatients = await _context.Set<DoctorPatient>()
+                .Include(d => d.Doctor)
+                .Include(d => d.Patient).ToListAsync();
         }
     }
-
 }

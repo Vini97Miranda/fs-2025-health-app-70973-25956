@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace HealthApp.Pages
+namespace HealthApp.Razor.Pages
 {
     public class IndexModel : PageModel
     {
@@ -18,3 +18,4 @@ namespace HealthApp.Pages
         }
     }
 }
+

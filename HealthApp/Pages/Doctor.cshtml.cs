@@ -1,28 +1,25 @@
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+using HealthApp.Domain.Entities;
+using HealthApp.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace HealthApp.Pages
+namespace HealthApp.Razor.Pages;
+
+public class DoctorModel : PageModel
 {
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    [IgnoreAntiforgeryToken]
-    public class ErrorModel : PageModel
-    {
-        public string? RequestId { get; set; }
+	private readonly IAppointmentRepository _appointmentService;
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+	public DoctorModel(IAppointmentRepository appointmentService)
+	{
+		_appointmentService = appointmentService;
+	}
 
-        private readonly ILogger<ErrorModel> _logger;
+	public List<Appointment> Appointments { get; set; } = new();
+	public List<Appointment> PendingAppointments { get; set; } = new();
 
-        public ErrorModel(ILogger<ErrorModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-        }
-    }
-
+	public async Task OnGetAsync()
+	{
+		var doctorId = 1; // Get from auth in real app
+		Appointments = (await _appointmentService.GetByDoctorIdAsync(doctorId)).ToList();
+		PendingAppointments = (await _appointmentService.GetPendingAppointmentsAsync(doctorId)).ToList();
+	}
 }
