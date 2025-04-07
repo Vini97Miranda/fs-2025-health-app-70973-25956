@@ -38,7 +38,4 @@ public class Appointment
 
     public Prescription? Prescription { get; set; }
 }
-[Required]
-public int DoctorId { get; set; }
-public required Doctor Doctor { get; set; }
 
