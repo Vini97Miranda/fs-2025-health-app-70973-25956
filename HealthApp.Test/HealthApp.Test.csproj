@@ -29,7 +29,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\HealthApp.Razor\HealthApp.Razor.csproj" />
+		<ProjectReference Include="..\HealthApp\HealthApp.Razor.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
