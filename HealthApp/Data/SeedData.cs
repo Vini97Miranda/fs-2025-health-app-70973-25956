@@ -142,3 +142,111 @@ public static class SeedData
 
         await context.SaveChangesAsync();
     }
+
+    private static async Task SeedPatients(UserManager<IdentityUser> userManager,
+    ApplicationDbContext context, string adminUserId, ILogger<Program> logger)
+    {
+        if (await context.Set<Patient>().AnyAsync(p => p.UserId != adminUserId))
+        {
+            logger.LogInformation("Patients already seeded");
+            return;
+        }
+
+        var patientFaker = new Faker<Patient>()
+            .RuleFor(p => p.Name, f => {
+                var name = f.Name.FullName();
+                while (name.Length > 100)
+                    name = f.Name.FullName();
+                return name;
+            })
+            .RuleFor(p => p.DateOfBirth, f => f.Date.Between(DateTime.Now.AddYears(-80), DateTime.Now.AddYears(-18)))
+            .RuleFor(p => p.PhoneNumber, f => {
+                var phone = f.Phone.PhoneNumber();
+                return phone.Length > 20 ? phone[..20] : phone;
+            })
+            .RuleFor(p => p.Email, (f, p) => {
+                var email = $"{p.Name.Replace(" ", "").ToLower()}@patient.com";
+                return email.Length > 256 ? email[..256] : email;
+            });
+
+        var patients = patientFaker.Generate(10);
+
+        foreach (var patient in patients)
+        {
+            try
+            {
+                if (await userManager.FindByEmailAsync(patient.Email) != null)
+                {
+                    patient.Email = $"{patient.Name.Replace(" ", "")}{Guid.NewGuid().ToString()[..4]}@patient.com";
+                }
+
+                var patientUser = new IdentityUser
+                {
+                    UserName = patient.Email,
+                    Email = patient.Email,
+                    EmailConfirmed = true
+                };
+
+                var result = await userManager.CreateAsync(patientUser, "StrongPatient123!");
+                if (!result.Succeeded)
+                {
+                    logger.LogError("Failed to create user {Email}: {Errors}",
+                        patient.Email, string.Join(", ", result.Errors.Select(e => e.Description)));
+                    continue;
+                }
+
+                result = await userManager.AddToRoleAsync(patientUser, "Patient");
+                if (!result.Succeeded)
+                {
+                    logger.LogWarning("Failed to add role to {Email}: {Errors}",
+                        patient.Email, string.Join(", ", result.Errors.Select(e => e.Description)));
+                }
+
+                patient.UserId = patientUser.Id;
+                context.Set<Patient>().Add(patient);
+
+                await context.SaveChangesAsync();
+                logger.LogInformation("Created patient {Email}", patient.Email);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error creating patient {Email}", patient.Email);
+            }
+        }
+    }
+
+    private static async Task SeedAppointments(ApplicationDbContext context, ILogger<Program> logger)
+    {
+        if (await context.Set<Appointment>().AnyAsync())
+        {
+            logger.LogInformation("Appointments already seeded");
+            return;
+        }
+
+        var doctors = await context.Set<Doctor>().ToListAsync();
+        var patients = await context.Set<Patient>().ToListAsync();
+
+        if (doctors.Count == 0 || patients.Count == 0)
+        {
+            logger.LogWarning("Cannot seed appointments - need at least 1 doctor and 1 patient");
+            return;
+        }
+
+        var appointmentFaker = new Faker<Appointment>()
+            .RuleFor(a => a.PatientId, (f, a) => f.PickRandom(patients).Id)
+            .RuleFor(a => a.DoctorId, f => f.PickRandom(doctors).Id)
+            .RuleFor(a => a.AppointmentDateTime, f => f.Date.Between(DateTime.Now.AddDays(-30), DateTime.Now.AddDays(30)))
+            .RuleFor(a => a.EndDateTime, (f, a) => a.AppointmentDateTime.AddMinutes(30))
+            .RuleFor(a => a.Status, f => f.PickRandom("Pending", "Approved", "Completed"))
+            .RuleFor(a => a.Reason, f => f.Lorem.Sentence())
+            .RuleFor(a => a.Notes, f => f.Lorem.Paragraph());
+
+        for (int i = 0; i < 5; i++)
+        {
+            var appointments = appointmentFaker.Generate(20); // 20 appointments per batch
+            await context.Set<Appointment>().AddRangeAsync(appointments);
+            await context.SaveChangesAsync();
+            logger.LogInformation("Seeded batch of {Count} appointments", appointments.Count);
+        }
+    }
+}
