@@ -38,33 +38,33 @@ namespace HealthApp.Razor.Areas.Identity.Pages.Account
         {
             [Required]
             [Display(Name = "Full Name")]
-            public string FullName { get; set; }
+            public string FullName { get; set; } = string.Empty;
 
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
-            public string Email { get; set; }
+            public string Email { get; set; } = string.Empty;
 
             [Required]
             [StringLength(100, MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
-            public string Password { get; set; }
+            public string Password { get; set; } = string.Empty;
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "Passwords don't match.")]
-            public string ConfirmPassword { get; set; }
+            public string ConfirmPassword { get; set; } = string.Empty;
 
             [Required]
             [Display(Name = "User Type")]
-            public string UserType { get; set; }
+            public string UserType { get; set; } = string.Empty;
 
             [Display(Name = "Specialization")]
-            public string Specialization { get; set; }
+            public string Specialization { get; set; } = string.Empty;
         }
 
-        public async Task OnGetAsync(string returnUrl = null)
+        public async Task OnGetAsync(string returnUrl = null) 
         {
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
