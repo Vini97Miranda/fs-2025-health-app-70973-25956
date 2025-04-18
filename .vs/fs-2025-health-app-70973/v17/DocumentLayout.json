@@ -1,0 +1,870 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\healthapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\healthapp.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C25353A-0AAB-46F5-B97D-6C4FFF980311}|HealthApp.Test\\HealthApp.Test.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.test\\appointmentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C25353A-0AAB-46F5-B97D-6C4FFF980311}|HealthApp.Test\\HealthApp.Test.csproj|solutionrelative:healthapp.test\\appointmentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.api\\healthapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|solutionrelative:healthapp.api\\healthapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C25353A-0AAB-46F5-B97D-6C4FFF980311}|HealthApp.Test\\HealthApp.Test.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.test\\healthapp.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C25353A-0AAB-46F5-B97D-6C4FFF980311}|HealthApp.Test\\HealthApp.Test.csproj|solutionrelative:healthapp.test\\healthapp.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|solutionrelative:healthapp.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|solutionrelative:healthapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\healthapp.razor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\healthapp.razor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\_ViewStart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\_ViewImports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\LoginPartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\migrations\\20250402154309_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\migrations\\20250402154309_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp\\pages\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{815AAC19-FD15-4F1D-AE5E-9A504B0BDF1F}|HealthApp\\HealthApp.Razor.csproj|solutionrelative:healthapp\\pages\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D7B1D2E1-21AF-441C-B4E2-13DB80C6BF32}|HealthApp.API\\HealthApp.API.csproj|solutionrelative:healthapp.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\services\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\services\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\eventbus\\rabbitmqeventbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\eventbus\\rabbitmqeventbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\eventbus\\ieventbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\eventbus\\ieventbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\doctorpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\doctorpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|c:\\users\\vinic\\ca2\\fs-2025-health-app-70973\\healthapp.domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D221DE4-0520-4731-99C3-36864F55C795}|HealthApp.Domain\\HealthApp.Domain.csproj|solutionrelative:healthapp.domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HealthApp.Test.csproj",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Test\\HealthApp.Test.csproj",
+              "RelativeDocumentMoniker": "HealthApp.Test\\HealthApp.Test.csproj",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Test\\HealthApp.Test.csproj",
+              "RelativeToolTip": "HealthApp.Test\\HealthApp.Test.csproj",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-06T16:20:48.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthApp.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\HealthApp.Domain.csproj",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\HealthApp.Domain.csproj",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\HealthApp.Domain.csproj",
+              "RelativeToolTip": "HealthApp.Domain\\HealthApp.Domain.csproj",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-06T17:12:27.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "HealthApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\Program.cs",
+              "RelativeToolTip": "HealthApp.API\\Program.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAArwAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T19:45:39.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HealthApp.API.csproj",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\HealthApp.API.csproj",
+              "RelativeDocumentMoniker": "HealthApp.API\\HealthApp.API.csproj",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\HealthApp.API.csproj",
+              "RelativeToolTip": "HealthApp.API\\HealthApp.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-06T18:31:49.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Interfaces\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Interfaces\\IAppointmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:24:10.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Test\\AppointmentServiceTest.cs",
+              "RelativeDocumentMoniker": "HealthApp.Test\\AppointmentServiceTest.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Test\\AppointmentServiceTest.cs",
+              "RelativeToolTip": "HealthApp.Test\\AppointmentServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T10:55:23.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HealthApp.Razor.csproj",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj",
+              "RelativeDocumentMoniker": "HealthApp\\HealthApp.Razor.csproj",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj",
+              "RelativeToolTip": "HealthApp\\HealthApp.Razor.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-06T19:24:39.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs",
+              "RelativeDocumentMoniker": "HealthApp\\Program.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs",
+              "RelativeToolTip": "HealthApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T07:39:17.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "HealthApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "HealthApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T11:04:30.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "HealthApp.API\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "HealthApp.API\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:27:38.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\Appointment.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Appointment.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\Appointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:14:38.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json",
+              "RelativeDocumentMoniker": "HealthApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json",
+              "RelativeToolTip": "HealthApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T19:43:01.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "HealthApp\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Data\\SeedData.cs",
+              "RelativeToolTip": "HealthApp\\Data\\SeedData.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAADwv/sAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T09:08:14.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\NotificationService.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Services\\NotificationService.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAkwH4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:32:20.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HealthApp.Razor.csproj",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\HealthApp.Razor.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-06T17:12:08.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "HealthApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "HealthApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-07T07:38:05.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20250402154309_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Migrations\\20250402154309_InitialCreate.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Migrations\\20250402154309_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Migrations\\20250402154309_InitialCreate.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Migrations\\20250402154309_InitialCreate.cs",
+              "ViewState": "AQIAAJ8BAAAAAAAAAAAnwKQBAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:27:03.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIUCAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:29:12.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Admin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs",
+              "RelativeDocumentMoniker": "HealthApp\\Pages\\Admin.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs",
+              "RelativeToolTip": "HealthApp\\Pages\\Admin.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T19:57:02.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\DoctorService.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Services\\DoctorService.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\DoctorService.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Services\\DoctorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:31:41.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HealthApp.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HealthApp.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T17:43:13.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\_ViewStart.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Areas\\Identity\\Pages\\Account\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T17:38:37.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\DesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Services\\DesignTimeDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\DesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Services\\DesignTimeDbContextFactory.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAkwBoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:31:23.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Services\\AppointmentService.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAkwJIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:31:01.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Services\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Services\\ApplicationDbContext.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Services\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:30:41.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Interfaces\\INotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:25:11.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RabbitMQEventBus.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\EventBus\\RabbitMQEventBus.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\EventBus\\RabbitMQEventBus.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\EventBus\\RabbitMQEventBus.cs",
+              "RelativeToolTip": "HealthApp.Domain\\EventBus\\RabbitMQEventBus.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAkwJ8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:22:06.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IEventBus.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\EventBus\\IEventBus.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\EventBus\\IEventBus.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\EventBus\\IEventBus.cs",
+              "RelativeToolTip": "HealthApp.Domain\\EventBus\\IEventBus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:21:39.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\Patient.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Patient.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\Patient.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwCYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:15:57.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Prescription.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\Prescription.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Prescription.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\Prescription.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:16:17.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Schedule.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\Schedule.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Schedule.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\Schedule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:16:32.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Notification.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\Notification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:15:39.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "DoctorPatient.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\DoctorPatient.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\DoctorPatient.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\DoctorPatient.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\DoctorPatient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:15:09.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Doctor.cs",
+              "RelativeDocumentMoniker": "HealthApp.Domain\\Entities\\Doctor.cs",
+              "ToolTip": "C:\\Users\\vinic\\CA2\\fs-2025-health-app-70973\\HealthApp.Domain\\Entities\\Doctor.cs",
+              "RelativeToolTip": "HealthApp.Domain\\Entities\\Doctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:14:56.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:09:30.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T17:08:39.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Privacy.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:04:35.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T17:04:26.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:04:02.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T17:03:54.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:03:18.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T17:02:59.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Patient.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:02:21.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Patient.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Patient.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T17:01:48.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DoctorPatientList.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAkwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T17:00:16.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DoctorPatientList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\DoctorPatientList.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwCAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T17:01:21.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Doctor.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T16:59:44.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Doctor.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Doctor.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T16:59:07.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Admin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAIAwwAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T16:56:46.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Admin.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAkwDsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T16:55:57.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T16:52:43.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T16:52:15.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwDMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T16:50:52.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\vinic\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\LoginPartial.cshtml",
+              "RelativeToolTip": "..\\..\\OneDrive\\\u00C1rea de Trabalho\\YEAR3\\Back-End Web Development\\CA2\\fs-2025-health-app-70973\\HealthApp\\Pages\\Shared\\LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T16:50:25.143Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
