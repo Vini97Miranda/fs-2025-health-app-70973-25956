@@ -4,6 +4,7 @@ using DoctorAppointment.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DoctorAppointment.Persistence.Migrations
 {
     [DbContext(typeof(DoctorAppointmentContext))]
-    partial class DoctorAppointmentContextModelSnapshot : ModelSnapshot
+    [Migration("20250418144823_UpdateSeededUsers")]
+    partial class UpdateSeededUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,7 +57,7 @@ namespace DoctorAppointment.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2025, 4, 21, 11, 33, 20, 977, DateTimeKind.Local).AddTicks(6531),
+                            Date = new DateTime(2025, 4, 21, 15, 48, 22, 563, DateTimeKind.Local).AddTicks(9557),
                             DoctorId = 3,
                             PatientId = 2,
                             Status = 0
@@ -62,7 +65,7 @@ namespace DoctorAppointment.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2025, 4, 20, 11, 33, 20, 977, DateTimeKind.Local).AddTicks(6603),
+                            Date = new DateTime(2025, 4, 20, 15, 48, 22, 563, DateTimeKind.Local).AddTicks(9631),
                             DoctorId = 3,
                             PatientId = 2,
                             Status = 1
@@ -70,7 +73,7 @@ namespace DoctorAppointment.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2025, 4, 19, 11, 33, 20, 977, DateTimeKind.Local).AddTicks(6605),
+                            Date = new DateTime(2025, 4, 19, 15, 48, 22, 563, DateTimeKind.Local).AddTicks(9633),
                             DoctorId = 3,
                             PatientId = 2,
                             Status = 2
@@ -114,7 +117,7 @@ namespace DoctorAppointment.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "d9dd2b48-285f-4818-bb7a-d58a289c91d9",
+                            ConcurrencyStamp = "3dbaedf3-1450-44a6-a82d-c9dd4826d654",
                             Description = "Administrator can access and manage all data.",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
@@ -122,7 +125,7 @@ namespace DoctorAppointment.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "b76a048a-96d0-4446-92f4-1aba55b1308a",
+                            ConcurrencyStamp = "ad15e175-c424-41aa-8b3d-66fe9c284d01",
                             Description = "Patient can make appointment requests.",
                             Name = "Patient",
                             NormalizedName = "PATIENT"
@@ -130,7 +133,7 @@ namespace DoctorAppointment.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            ConcurrencyStamp = "b6728c1c-f2d0-4063-abac-5bf8b5eda364",
+                            ConcurrencyStamp = "b487bdce-9c01-46a8-9aec-d6bcaa082920",
                             Description = "Doctor can approve or decline appointments.",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
@@ -219,55 +222,55 @@ namespace DoctorAppointment.Persistence.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "55021914-cfbb-4c37-9d08-357c399d1aba",
-                            Email = "admin@email.com",
+                            ConcurrencyStamp = "996f1c7c-85af-4f11-b2bb-822d64ca3de0",
+                            Email = "felipe.admin@demo.com",
                             EmailConfirmed = true,
-                            FirstName = "Admin",
-                            LastName = "Test",
+                            FirstName = "Felipe",
+                            LastName = "Admin",
                             LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@EMAIL.COM",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHUyEBAfL6QYagIc0/OXMhi9ZPbFL37ayy+iqt92ewv3ZYChNHe/FXPRF87ShS0WIw==",
+                            NormalizedEmail = "FELIPE.ADMIN@DEMO.COM",
+                            NormalizedUserName = "FELIPE.ADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMJvfWug+nwRqd34d5Db0Dhfxr3u395AbVwGZM67U6dQoW+PNdyBSH3FbjkpafhmxQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "18cdc90d-4042-4658-a658-40075ad135f6",
+                            SecurityStamp = "477632e3-2e35-4342-a595-74e3b43e668a",
                             TwoFactorEnabled = false,
-                            UserName = "admin"
+                            UserName = "felipe.admin"
                         },
                         new
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "18551aca-b82f-4afd-bd27-8efc5b0f7c17",
-                            Email = "alexandra.valkova@email.com",
+                            ConcurrencyStamp = "43135996-fd15-4be0-a6cb-1d3c2462ae25",
+                            Email = "luna.silva@demo.com",
                             EmailConfirmed = true,
-                            FirstName = "Alexandra",
-                            LastName = "Valkova",
+                            FirstName = "Luna",
+                            LastName = "Silva",
                             LockoutEnabled = false,
-                            NormalizedEmail = "ALEXANDRA.VALKOVA@EMAIL.COM",
-                            NormalizedUserName = "ALEXANDRA.VALKOVA",
-                            PasswordHash = "AQAAAAIAAYagAAAAECyuSVV/BSOvuj8RBNdZi9xtEZPZGjufpd2wlL3KuW3Snk9ZpUWDhL1ZERa357LNfg==",
+                            NormalizedEmail = "LUNA.SILVA@DEMO.COM",
+                            NormalizedUserName = "LUNA.SILVA",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIpi8Q9V09O8FYxaj4mbgx0OlYmjPUC4cE8IudePK+CmHU4I+B9Szrtz+dyX12sESA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "3b1ff1ad-7cb9-4154-b775-7cbd804dad7f",
+                            SecurityStamp = "e17deb7d-21b1-42ad-955c-d8ed81333cc4",
                             TwoFactorEnabled = false,
-                            UserName = "alexandra.valkova"
+                            UserName = "luna.silva"
                         },
                         new
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3154599d-2e2d-425e-85f1-0f9a3e2218c9",
-                            Email = "diana.yosifova@email.com",
+                            ConcurrencyStamp = "292e8b49-92f8-4a02-a12e-38faf490871b",
+                            Email = "dr.bruno@demo.com",
                             EmailConfirmed = true,
-                            FirstName = "Diana",
-                            LastName = "Yosifova",
+                            FirstName = "Dr. Bruno",
+                            LastName = "Santos",
                             LockoutEnabled = false,
-                            NormalizedEmail = "DIANA.YOSIFOVA@EMAIL.COM",
-                            NormalizedUserName = "DIANA.YOSIFOVA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFIzhwk56pIthZnBoOzgWd5luKep7IzRnukUix3beh+GvdDYas/yJDjeLr5V1lVZkA==",
+                            NormalizedEmail = "DR.BRUNO@DEMO.COM",
+                            NormalizedUserName = "DR.BRUNO",
+                            PasswordHash = "AQAAAAIAAYagAAAAECtgLKsCYb/PneKbIIYwOmi2+ZFpR6dGZwA4oy02uOX1H026Ty1y9cpSgV62ypsZTg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "14f46ea2-d213-49ed-ad34-7a3c299f396d",
+                            SecurityStamp = "4c49d425-a50b-4180-bbf2-7fa67244f307",
                             TwoFactorEnabled = false,
-                            UserName = "diana.yosifova"
+                            UserName = "dr.bruno"
                         });
                 });
 

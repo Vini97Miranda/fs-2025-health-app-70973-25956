@@ -8,8 +8,8 @@ using static DoctorAppointment.Domain.Constants.Roles;
 var builder = WebApplication.CreateBuilder(args);
 
 // Database
-builder.Services.AddDatabase(builder.Configuration.GetConnectionString(ConnectionStringName) ??
-    throw new InvalidOperationException($"Connection string '{ConnectionStringName}' not found."));
+builder.Services.AddDatabase(builder.Configuration.GetConnectionString("DoctorAppointmentDatabase") ??
+    throw new InvalidOperationException("Connection string 'DoctorAppointmentDatabase' not found."));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // Identity

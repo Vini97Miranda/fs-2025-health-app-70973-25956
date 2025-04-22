@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using DoctorAppointment.API.Endpoints;
 using DoctorAppointment.API.ExceptionHandlers;
+using DoctorAppointment.API.Services;
 using DoctorAppointment.Application;
 using DoctorAppointment.Domain.Entities.Identity;
 using DoctorAppointment.Persistence;
@@ -8,7 +9,14 @@ using Microsoft.OpenApi.Models;
 using static DoctorAppointment.Domain.Constants.Database;
 using static DoctorAppointment.Domain.Constants.Roles;
 
+   
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<RabbitMqPublisher>();
+builder.Services.AddSingleton<AppointmentCreatedPublisher>();
+builder.Services.AddMemoryCache();
+
+
 
 // DB Context
 builder.Services.AddDatabase(builder.Configuration.GetConnectionString(ConnectionStringName) ??

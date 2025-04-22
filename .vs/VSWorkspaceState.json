@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DoctorAppointment-main",
-    "\\DoctorAppointment-main\\DoctorAppointment.Persistence",
-    "\\DoctorAppointment-main\\DoctorAppointment.Persistence\\Migrations"
+    "\\DoctorAppointment.API",
+    "\\DoctorAppointment.API\\Service",
+    "\\DoctorAppointment.Persistence",
+    "\\DoctorAppointment.Persistence\\Extensions"
   ],
-  "SelectedNode": "\\DoctorAppointment-main\\DoctorAppointment.Persistence\\Migrations\\DoctorAppointmentContextModelSnapshot.cs",
+  "SelectedNode": "\\DoctorAppointment.sln",
   "PreviewInSolutionExplorer": false
 }

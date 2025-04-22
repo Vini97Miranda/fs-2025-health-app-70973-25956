@@ -52,12 +52,12 @@ namespace DoctorAppointment.Persistence.Extensions
             ApplicationUser adminUser = new()
             {
                 Id = 1,
-                FirstName = "Admin",
-                LastName = "Test",
-                UserName = "admin",
-                NormalizedUserName = "ADMIN",
-                Email = "admin@email.com",
-                NormalizedEmail = "ADMIN@EMAIL.COM",
+                FirstName = "Felipe",
+                LastName = "Admin",
+                UserName = "felipe.admin",
+                NormalizedUserName = "FELIPE.ADMIN",
+                Email = "felipe.admin@demo.com",
+                NormalizedEmail = "FELIPE.ADMIN@DEMO.COM",
                 EmailConfirmed = true,
                 SecurityStamp = Guid.NewGuid().ToString()
             };
@@ -65,12 +65,12 @@ namespace DoctorAppointment.Persistence.Extensions
             ApplicationUser patientUser = new()
             {
                 Id = 2,
-                FirstName = "Alexandra",
-                LastName = "Valkova",
-                UserName = "alexandra.valkova",
-                NormalizedUserName = "ALEXANDRA.VALKOVA",
-                Email = "alexandra.valkova@email.com",
-                NormalizedEmail = "ALEXANDRA.VALKOVA@EMAIL.COM",
+                FirstName = "Luna",
+                LastName = "Silva",
+                UserName = "luna.silva",
+                NormalizedUserName = "LUNA.SILVA",
+                Email = "luna.silva@demo.com",
+                NormalizedEmail = "LUNA.SILVA@DEMO.COM",
                 EmailConfirmed = true,
                 SecurityStamp = Guid.NewGuid().ToString()
             };
@@ -78,23 +78,24 @@ namespace DoctorAppointment.Persistence.Extensions
             ApplicationUser doctorUser = new()
             {
                 Id = 3,
-                FirstName = "Diana",
-                LastName = "Yosifova",
-                UserName = "diana.yosifova",
-                NormalizedUserName = "DIANA.YOSIFOVA",
-                Email = "diana.yosifova@email.com",
-                NormalizedEmail = "DIANA.YOSIFOVA@EMAIL.COM",
+                FirstName = "Dr. Bruno",
+                LastName = "Santos",
+                UserName = "dr.bruno",
+                NormalizedUserName = "DR.BRUNO",
+                Email = "dr.bruno@demo.com",
+                NormalizedEmail = "DR.BRUNO@DEMO.COM",
                 EmailConfirmed = true,
                 SecurityStamp = Guid.NewGuid().ToString()
             };
 
             PasswordHasher<ApplicationUser> hasher = new();
-            adminUser.PasswordHash = hasher.HashPassword(adminUser, "admin");
-            patientUser.PasswordHash = hasher.HashPassword(patientUser, "avalkova");
-            doctorUser.PasswordHash = hasher.HashPassword(doctorUser, "dyosifova");
+            adminUser.PasswordHash = hasher.HashPassword(adminUser, "felipe123");
+            patientUser.PasswordHash = hasher.HashPassword(patientUser, "luna123");
+            doctorUser.PasswordHash = hasher.HashPassword(doctorUser, "bruno123");
 
             modelBuilder.Entity<ApplicationUser>().HasData(adminUser, patientUser, doctorUser);
         }
+
 
         private static void SeedUserRoles(this ModelBuilder modelBuilder)
         {

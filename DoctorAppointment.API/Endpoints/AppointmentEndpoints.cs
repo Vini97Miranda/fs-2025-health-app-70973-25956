@@ -1,4 +1,5 @@
-﻿using DoctorAppointment.Application.Features.Appointments.Commands.Create;
+﻿using DoctorAppointment.API.Services;
+using DoctorAppointment.Application.Features.Appointments.Commands.Create;
 using DoctorAppointment.Application.Features.Appointments.Commands.Delete;
 using DoctorAppointment.Application.Features.Appointments.Commands.Update;
 using DoctorAppointment.Application.Features.Appointments.Commands.Update.Status;
@@ -10,6 +11,7 @@ using DoctorAppointment.Domain.Errors;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace DoctorAppointment.API.Endpoints
 {
@@ -60,16 +62,35 @@ namespace DoctorAppointment.API.Endpoints
             return group;
         }
 
-        private static async Task<Results<Ok<List<AppointmentDTO>>, ProblemHttpResult>> GetAppointments(ISender mediatr, [FromQuery] AppointmentStatus? status, [FromQuery] int? patientId, [FromQuery] int? doctorId)
+        private static async Task<Results<Ok<List<AppointmentDTO>>, ProblemHttpResult>> GetAppointments(
+            ISender mediatr,
+            IMemoryCache cache,
+            [FromQuery] AppointmentStatus? status,
+            [FromQuery] int? patientId,
+            [FromQuery] int? doctorId)
         {
+            string cacheKey = $"appointments_{status}_{patientId}_{doctorId}";
+
+            if (cache.TryGetValue(cacheKey, out List<AppointmentDTO> cachedAppointments))
+            {
+                Console.WriteLine("Retrieved from cache.");
+                return TypedResults.Ok(cachedAppointments);
+            }
+
             Result<List<AppointmentDTO>> result = await mediatr.Send(new ListAppointmentsQuery(status, patientId, doctorId));
 
-            return result.IsSuccess
-                ? TypedResults.Ok(result.Value)
-                : TypedResults.Problem(result.Error.Description);
+            if (result.IsSuccess)
+            {
+                Console.WriteLine("Loaded from database, added to cache.");
+                cache.Set(cacheKey, result.Value, TimeSpan.FromSeconds(30));
+                return TypedResults.Ok(result.Value);
+            }
+
+            return TypedResults.Problem(result.Error.Description);
         }
 
-        private static async Task<Results<Ok<AppointmentDTO>, NotFound>> GetAppointmentById(ISender mediatr, [FromRoute] int id)
+        private static async Task<Results<Ok<AppointmentDTO>, NotFound>> GetAppointmentById(
+            ISender mediatr, [FromRoute] int id)
         {
             Result<AppointmentDTO> result = await mediatr.Send(new GetAppointmentQuery(id));
 
@@ -78,13 +99,28 @@ namespace DoctorAppointment.API.Endpoints
                 : TypedResults.NotFound();
         }
 
-        private static async Task<Results<CreatedAtRoute<int>, ProblemHttpResult>> AddAppointment(HttpContext httpContext, ISender mediatr, [FromBody] AppointmentDTO appointment)
+        private static async Task<Results<CreatedAtRoute<int>, ProblemHttpResult>> AddAppointment(
+            HttpContext httpContext,
+            ISender mediatr,
+            AppointmentCreatedPublisher publisher,
+            [FromBody] AppointmentDTO appointment)
         {
             Result<int> result = await mediatr.Send(new CreateAppointmentCommand(appointment));
 
             if (result.IsSuccess)
             {
                 int id = result.Value;
+
+                // Publish message to RabbitMQ (even if not active)
+                publisher.Publish(new
+                {
+                    AppointmentId = id,
+                    PatientId = appointment.PatientId,
+                    DoctorId = appointment.DoctorId,
+                    Date = appointment.Date,
+                    Status = appointment.Status.ToString()
+                });
+
                 return TypedResults.CreatedAtRoute(id, nameof(GetAppointmentById), new { id });
             }
 
@@ -98,7 +134,8 @@ namespace DoctorAppointment.API.Endpoints
             return TypedResults.Problem(result.Error.Description, httpContext.Request.Path, statusCode, "Cannot add appointment.");
         }
 
-        private static async Task<Results<NoContent, NotFound, ProblemHttpResult>> UpdateAppointment(HttpContext httpContext, ISender mediatr, [FromRoute] int id, [FromBody] AppointmentDTO appointment)
+        private static async Task<Results<NoContent, NotFound, ProblemHttpResult>> UpdateAppointment(
+            HttpContext httpContext, ISender mediatr, [FromRoute] int id, [FromBody] AppointmentDTO appointment)
         {
             Result result = await mediatr.Send(new UpdateAppointmentCommand(id, appointment));
 
@@ -122,7 +159,8 @@ namespace DoctorAppointment.API.Endpoints
             return TypedResults.Problem(result.Error.Description, httpContext.Request.Path, statusCode, "Cannot update appointment.");
         }
 
-        private static async Task<Results<NoContent, NotFound>> UpdateAppointmentStatus(ISender mediatr, [FromRoute] int id, [FromBody] AppointmentStatus status)
+        private static async Task<Results<NoContent, NotFound>> UpdateAppointmentStatus(
+            ISender mediatr, [FromRoute] int id, [FromBody] AppointmentStatus status)
         {
             Result result = await mediatr.Send(new UpdateAppointmentStatusCommand(id, status));
 
@@ -131,7 +169,8 @@ namespace DoctorAppointment.API.Endpoints
                 : TypedResults.NotFound();
         }
 
-        private static async Task<Results<Ok<AppointmentDTO>, NotFound>> DeleteAppointment(ISender mediatr, [FromRoute] int id)
+        private static async Task<Results<Ok<AppointmentDTO>, NotFound>> DeleteAppointment(
+            ISender mediatr, [FromRoute] int id)
         {
             Result<AppointmentDTO> result = await mediatr.Send(new DeleteAppointmentCommand(id));
 
